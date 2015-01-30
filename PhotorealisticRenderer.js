@@ -16,7 +16,7 @@ function PhotorealisticRenderer(domQuery) {
        plane.position.z = -100;
        plane.position.y = -100;
        plane.overdraw = true;
-       self.scene.add(plane);
+       scene.add(plane);
             
     var ambientLight = new THREE.AmbientLight(0x0c0c0c);
     	scene.add(ambientLight);
