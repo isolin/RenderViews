@@ -47,6 +47,6 @@ function PhotorealisticRenderer(domQuery) {
          var light = new THREE.AmbientLight();
          THREE.Light.prototype.clone.call( self, light );
          return light;
-        }
+        };
     return self;
 }
