@@ -12,7 +12,6 @@ function PhotorealisticRenderer(domQuery) {
 
     self.scene = new THREE.Scene(); 
     self.renderer = new THREE.WebGLRenderer();
-    self.renderer.setClearColorHex(0xffffff, 1);
 
     //Plane for testing in case there are some problems receiving or processing the server data
        var plane = new THREE.Mesh(new THREE.PlaneGeometry(100, 100), new THREE.MeshNormalMaterial());
