@@ -6,7 +6,10 @@ function PhotorealisticRenderer(domQuery) {
     var self = BasicThreeRenderer(domQuery);
         
     self.shadowMapEnabled = true;
-        
+    
+
+
+    this.scene = new THREE.Scene();    
 
     //Plane for testing in case there are some problems receiving or processing the server data
        var plane = new THREE.Mesh(new THREE.PlaneGeometry(10, 10), new THREE.MeshNormalMaterial());
