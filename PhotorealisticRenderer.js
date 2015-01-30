@@ -5,16 +5,11 @@ function PhotorealisticRenderer(domQuery) {
 
     var self = BasicThreeRenderer(domQuery);
         
-    self.renderer = null;
     self.scene = null;
     self.camera = null;
     self.shadowMapEnabled = true;
         
  
-
-    //Sets the renderer window size to the size of the container where it will be attached
-      self.renderer.setSize(window.innerWidth(), window.innerHeight());
-      self.container.append(self.renderer.domElement); //attaches the <canvas> tag for the renderer as a child to the container element
 
     //Camera initialization
       self.camera = new THREE.PerspectiveCamera(50, window.innerWidth() / window.innerHeight(), 0.1, 1000); //field of view angle, aspect ratio, near clipping plane, far clipping plane
