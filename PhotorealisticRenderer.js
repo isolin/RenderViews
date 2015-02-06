@@ -7,6 +7,7 @@ function PhotorealisticRenderer(domQuery) {
         
     self.shadowMapEnabled = true;
     self.scene = null;
+    self.renderer =null;
 
     var renderer = new THREE.WebGL.Renderer();
     renderer.setSize(window.innerWidth,window.innerHeight);
