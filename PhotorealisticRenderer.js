@@ -7,12 +7,13 @@ function PhotorealisticRenderer(domQuery) {
         
     self.shadowMapEnabled = true;
     self.scene = null;
-    self.renderer =null;
+    self.renderer = null;
+    self.camera = null;
 
-    var renderer = new THREE.WebGL.Renderer();
-    renderer.setSize(window.innerWidth,window.innerHeight);
-    renderer.setClearColor(0xffffff, 1); //white)
-    doument.body.appendChild(renderer.domElement);
+    self.renderer = new THREE.WebGL.Renderer();
+    self.renderer.setSize(window.innerWidth,window.innerHeight);
+    self.renderer.setClearColor(0xffffff, 1); //white)
+    doument.body.appendChild(self.renderer.domElement);
 
 
     self.scene = new THREE.Scene(); 
