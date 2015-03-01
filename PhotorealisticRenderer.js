@@ -4,6 +4,8 @@ function PhotorealisticRenderer(domQuery) {
 
 
     var self = BasicThreeRenderer(domQuery);
+
+    self.renderer =new THREE.WebGLRenderer();
         
   // set the renderer
     self.renderer.setClearColorHex(0xffffff, 1); //white
