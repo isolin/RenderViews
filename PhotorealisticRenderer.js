@@ -27,7 +27,7 @@ function PhotorealisticRenderer(domQuery) {
         // Plane for testing in case there are some problems receiving or processing the server data
         var plane = new THREE.Mesh(new THREE.PlaneGeometry(10, 10), new THREE.MeshNormalMaterial());
        	plane.position.z = -10;
-        plane.position.y = -50;
+        plane.position.y = -100;
         plane.overdraw = true;
 
         //var ambiColor = "#0c0c0c";            
