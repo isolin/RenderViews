@@ -11,6 +11,7 @@ function PhotorealisticRenderer(domQuery) {
     })
         
   // set the renderer
+    self.renderer = new THREE.WebGLRenderer();
     self.renderer.setClearColorHex(0xffffff, 1); //white
     self.renderer.shadowMapEnabled = true;      
 
