@@ -12,7 +12,7 @@ function PhotorealisticRenderer(domQuery) {
     // set the renderer
         //self.renderer = new THREE.WebGLRenderer();
         //self.renderer.setClearColor(0xffffff, 1); //white
-        //self.renderer.shadowMapEnabled = true;      
+        self.renderer.shadowMapEnabled = true;      
 
         //Camera initialization
         //self.camera = new THREE.PerspectiveCamera(50, 1920/1080, 0.1, 1000); //field of view angle, aspect ratio, near clipping plane, far clipping plane
@@ -38,6 +38,7 @@ function PhotorealisticRenderer(domQuery) {
 
     self.updateCalls.push(function () {
         self.scene.add(spotLight);
+        self.scene.add(light);
         self.scene.add(plane);
         //this.renderer.render(this.scene, this.camera);
     });
