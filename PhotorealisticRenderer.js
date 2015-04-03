@@ -8,7 +8,7 @@ function PhotorealisticRenderer(domQuery) {
     self.initCalls.push( function (){
         this.projector = new THREE.Projector();
 
-    })
+    });
         
   // set the renderer
     self.renderer = new THREE.WebGLRenderer();
@@ -16,7 +16,7 @@ function PhotorealisticRenderer(domQuery) {
     self.renderer.shadowMapEnabled = true;      
 
     //Camera initialization
-      self.camera = new THREE.PerspectiveCamera(50, self.camera.innerWidth() / self.camera.innerHeight(), 0.1, 1000); //field of view angle, aspect ratio, near clipping plane, far clipping plane
+      self.camera = new THREE.PerspectiveCamera(50, this.camera.innerWidth() / this.camera.innerHeight(), 0.1, 1000); //field of view angle, aspect ratio, near clipping plane, far clipping plane
       //position of the camera
       self.camera.position.y = 5;
 	  self.camera.position.z = 4;
