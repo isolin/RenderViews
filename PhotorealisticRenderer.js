@@ -24,7 +24,7 @@ function PhotorealisticRenderer(domQuery) {
         //Our main scene
         self.scene = new THREE.Scene();
 
-        Plane for testing in case there are some problems receiving or processing the server data
+        //Plane for testing in case there are some problems receiving or processing the server data
         var plane = new THREE.Mesh(new THREE.PlaneGeometry(100, 100), new THREE.MeshNormalMaterial());
        	plane.position.z = -100;
         plane.position.y = -100;
@@ -39,5 +39,6 @@ function PhotorealisticRenderer(domQuery) {
         self.scene.add(plane);
         //this.renderer.render(this.scene, this.camera);
     });
-    return self
+    
+    return self;
 }
