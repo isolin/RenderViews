@@ -37,7 +37,7 @@ function PhotorealisticRenderer(domQuery) {
 
 
     self.updateCalls.push(function () {
-        self.scene.add( spotlight );
+        self.scene.add( spotLight );
         self.scene.add(plane);
         //this.renderer.render(this.scene, this.camera);
     });
