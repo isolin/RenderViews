@@ -34,7 +34,7 @@ function PhotorealisticRenderer(domQuery) {
     	  var light = new THREE.AmbientLight(0x404040);
     	  self.scene.add(light);
 
-    self.UpdateCalls.push(function () {
+    self.updateCalls.push(function () {
         this.renderer.render(this.scene, this.camera);
     });
 
