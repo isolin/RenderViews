@@ -11,7 +11,7 @@ function PhotorealisticRenderer(domQuery) {
       });        
     // set the renderer
         //self.renderer = new THREE.WebGLRenderer();
-        //self.renderer.setClearColor(0xffffff, 1); //white
+        self.renderer.setClearColor(0xffffff, 1); //white
         self.renderer.shadowMapEnabled = true;      
 
         //Camera initialization
@@ -25,7 +25,7 @@ function PhotorealisticRenderer(domQuery) {
         self.scene = new THREE.Scene();
 
         // Plane for testing in case there are some problems receiving or processing the server data
-        var plane = new THREE.Mesh(new THREE.PlaneGeometry(100, 100), new THREE.MeshNormalMaterial());
+        var plane = new THREE.Mesh(new THREE.PlaneGeometry(10, 10), new THREE.MeshNormalMaterial());
        	plane.position.z = -100;
         plane.position.y = -100;
         plane.overdraw = true;
