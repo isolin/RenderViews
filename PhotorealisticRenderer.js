@@ -31,11 +31,13 @@ function PhotorealisticRenderer(domQuery) {
         plane.overdraw = true;
 
             
-    	  var light = new THREE.AmbientLight(0x404040);
+    	  //var light = new THREE.AmbientLight(0x404040);
+        var spotLight = new THREE.SpotLight( 0xffffff );
+        spotLight.position.set( -40, 60, -10 );
 
 
     self.updateCalls.push(function () {
-        self.scene.add(light);
+        self.scene.add( spotlight );
         self.scene.add(plane);
         //this.renderer.render(this.scene, this.camera);
     });
