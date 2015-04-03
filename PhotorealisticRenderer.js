@@ -8,7 +8,10 @@ function PhotorealisticRenderer(domQuery) {
     self.initCalls.push( function (){
         this.projector = new THREE.Projector();
 
-      });        
+      });    
+
+      var renderer = self.isInitialized();
+      renderer.shadowMapEnabled = true;    
     // set the renderer
         //self.renderer = new THREE.WebGLRenderer();
         //self.renderer.setClearColor(0xffffff, 1); //white
