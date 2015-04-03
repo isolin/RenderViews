@@ -19,7 +19,7 @@ function PhotorealisticRenderer(domQuery) {
         //position of the camera
         //self.camera.position.y = 5;
 	      //self.camera.position.z = 4;
-	      //self.camera.rotation.x = 45 * (Math.PI / 180);
+	      self.camera.rotation.x = 15 * (Math.PI / 180);
 
         //Our main scene
         self.scene = new THREE.Scene();
