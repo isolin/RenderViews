@@ -30,7 +30,7 @@ function PhotorealisticRenderer(domQuery) {
         plane.position.y = -100;
         plane.overdraw = true;
 
-            
+        var ambiColor = "#0c0c0c";            
     	  //var light = new THREE.AmbientLight(0x404040);
         var spotLight = new THREE.SpotLight( 0xffffff );
         spotLight.position.set( -40, 60, -10 );
