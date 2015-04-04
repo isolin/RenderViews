@@ -9,10 +9,10 @@ function PhotorealisticRenderer(domQuery) {
         this.projector = new THREE.Projector();
         this.renderer.shadowMapEnabled = true;
         this.renderer.setClearColor(0xffffff, 1); //white
-        this.camera = new THREE.PerspectiveCamera(50, this.container.innerWidth() / this.container.innerHeight(), 0.1, 1000); //field of view angle, aspect ratio, near clipping plane, far clipping plane
             //position of the camera
         this.camera.position.y = 5;
         this.camera.position.z = 4;
+        self.camera.rotation.x = 0 * (Math.PI / 180);
       });    
    
     // set the renderer
