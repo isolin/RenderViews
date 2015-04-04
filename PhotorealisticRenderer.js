@@ -9,10 +9,6 @@ function PhotorealisticRenderer(domQuery) {
         this.projector = new THREE.Projector();
         this.renderer.shadowMapEnabled = true;
         this.renderer.setClearColor(0xffffff, 1); //white
-            //position of the camera
-        this.camera.position.y = 5;
-        this.camera.position.z = 4;
-        self.camera.rotation.x = 0 * (Math.PI / 180);
       });    
    
     // set the renderer
@@ -31,9 +27,9 @@ function PhotorealisticRenderer(domQuery) {
         self.scene = new THREE.Scene();
 
         // Plane for testing in case there are some problems receiving or processing the server data
-        var plane = new THREE.Mesh(new THREE.PlaneGeometry(100, 100), new THREE.MeshNormalMaterial());
-       	plane.position.z = -50;
-        plane.position.y = -50;
+        var plane = new THREE.Mesh(new THREE.PlaneGeometry(50, 50), new THREE.MeshNormalMaterial());
+       	plane.position.z = -100;
+        plane.position.y = -100;
         plane.overdraw = true;
 
         //var ambiColor = "#0c0c0c";            
