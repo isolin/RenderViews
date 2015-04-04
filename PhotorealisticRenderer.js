@@ -42,7 +42,6 @@ function PhotorealisticRenderer(domQuery) {
         self.scene.add( spotLight );
         //self.scene.add(light);
         self.scene.add(plane);
-        self.renderer.render();
         //self.camera.rotation.x = 15 * (Math.PI / 180);
         //this.renderer.render(this.scene, this.camera);
     });
