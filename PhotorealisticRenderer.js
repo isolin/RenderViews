@@ -9,7 +9,7 @@ function PhotorealisticRenderer(domQuery) {
         this.projector = new THREE.Projector();
         this.renderer.shadowMapEnabled = true;
         this.renderer.setClearColor(0xffffff, 1); //white
-        this.camera = new THREE.PerspectiveCamera(50, 1920 / 1080, 0.1, 1000); //field of view angle, aspect ratio, near clipping plane, far clipping plane
+        this.camera = new THREE.PerspectiveCamera(50, this.container.innerWidth() / this.container.innerHeight(), 0.1, 1000); //field of view angle, aspect ratio, near clipping plane, far clipping plane
             //position of the camera
         this.camera.position.y = 5;
         this.camera.position.z = 4;
@@ -31,7 +31,7 @@ function PhotorealisticRenderer(domQuery) {
         self.scene = new THREE.Scene();
 
         // Plane for testing in case there are some problems receiving or processing the server data
-        var plane = new THREE.Mesh(new THREE.PlaneGeometry(10, 10), new THREE.MeshNormalMaterial());
+        var plane = new THREE.Mesh(new THREE.PlaneGeometry(100, 100), new THREE.MeshNormalMaterial());
        	plane.position.z = -50;
         plane.position.y = -50;
         plane.overdraw = true;
