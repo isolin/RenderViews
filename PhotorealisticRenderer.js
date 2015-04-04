@@ -7,11 +7,11 @@ function PhotorealisticRenderer(domQuery) {
     
     self.initCalls.push( function (){
         this.projector = new THREE.Projector();
+        this.renderer.shadowMapEnabled = true;
+        this.renderer.setClearColor(0xffffff, 1); //white
 
       });    
-
-      var renderer = self.isInitialized();
-      renderer.shadowMapEnabled = true;    
+   
     // set the renderer
         //self.renderer = new THREE.WebGLRenderer();
         //self.renderer.setClearColor(0xffffff, 1); //white
@@ -40,7 +40,7 @@ function PhotorealisticRenderer(domQuery) {
 
 
     self.updateCalls.push(function () {
-        self.scene.add( light );
+        self.scene.add( spotLight );
         //self.scene.add(light);
         self.scene.add(plane);
         //self.camera.rotation.x = 15 * (Math.PI / 180);
