@@ -19,9 +19,9 @@ function PhotorealisticRenderer(domQuery) {
         //Camera initialization
         //self.camera = new THREE.PerspectiveCamera(50, 1920/1080, 0.1, 1000); //field of view angle, aspect ratio, near clipping plane, far clipping plane
         //position of the camera
-        self.camera.position.y = 5;
-	      self.camera.position.z = 4;
-	      self.camera.rotation.x = 0 * (Math.PI / 180);
+        //self.camera.position.y = 5;
+	      //self.camera.position.z = 4;
+	      //self.camera.rotation.x = 45 * (Math.PI / 180);
 
         //Our main scene
         self.scene = new THREE.Scene();
@@ -42,7 +42,7 @@ function PhotorealisticRenderer(domQuery) {
         self.scene.add( spotLight );
         //self.scene.add(light);
         self.scene.add(plane);
-        self.camera.render();
+        self.renderer.render();
         //self.camera.rotation.x = 15 * (Math.PI / 180);
         //this.renderer.render(this.scene, this.camera);
     });
