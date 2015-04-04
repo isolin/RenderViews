@@ -9,7 +9,7 @@ function PhotorealisticRenderer(domQuery) {
         this.projector = new THREE.Projector();
         this.renderer.shadowMapEnabled = true;
         this.renderer.setClearColor(0xffffff, 1); //white
-
+        this.camera.rotation.x = 90 * (Math.PI / 180);
       });    
    
     // set the renderer
