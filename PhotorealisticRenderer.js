@@ -71,6 +71,14 @@
           dirLight.name = 'Dir. Light';
           scene.add( dirLight );
 
+
+				var material = new THREE.MeshPhongMaterial( {
+					color: 0xff0000,
+					shininess: 150,
+					specular: 0x222222,
+					shading: THREE.SmoothShading,
+				} );
+				
           var geometry = new THREE.BoxGeometry( 3, 3, 3 );
           cube = new THREE.Mesh( geometry, material );
           cube.position.set( 8, 3, 8 );
