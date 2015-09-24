@@ -81,7 +81,7 @@
             specular: 0x222222,
             shading: THREE.SmoothShading,
           } );
-        
+
           cube = new THREE.Mesh( geometry, material );
           cube.position.set( 8, 3, 8 );
           cube.castShadow = true;
@@ -103,14 +103,14 @@
           ground.receiveShadow = true;
           scene.add( ground );
 
-      }
+    }
           
     function animate() {
 
         requestAnimationFrame( animate );
         render();
 
-      }
+    }
 
     function render() {
           var time = Date.now() * 0.0005;
@@ -120,8 +120,6 @@
 
           renderer.render( scene, camera );
 
-      }
-    
-
+    }
     return self;
-  }
+}
