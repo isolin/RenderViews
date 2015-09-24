@@ -72,14 +72,16 @@
           scene.add( dirLight );
 
 
-				var material = new THREE.MeshPhongMaterial( {
-					color: 0xff0000,
-					shininess: 150,
-					specular: 0x222222,
-					shading: THREE.SmoothShading,
-				} );
-				
+
           var geometry = new THREE.BoxGeometry( 3, 3, 3 );
+
+          var material = new THREE.MeshPhongMaterial( {
+            color: 0xff0000,
+            shininess: 150,
+            specular: 0x222222,
+            shading: THREE.SmoothShading,
+          } );
+        
           cube = new THREE.Mesh( geometry, material );
           cube.position.set( 8, 3, 8 );
           cube.castShadow = true;
@@ -87,11 +89,12 @@
           scene.add( cube );
 
           var geometry = new THREE.BoxGeometry( 10, 0.15, 10 );
+
           var material = new THREE.MeshPhongMaterial( {
-            color: 0xa0adaf,
-            shininess: 150,
-            specular: 0xffffff,
-            shading: THREE.SmoothShading
+              color: 0xa0adaf,
+              shininess: 150,
+              specular: 0xffffff,
+              shading: THREE.SmoothShading
           } );
 
           var ground = new THREE.Mesh( geometry, material );
