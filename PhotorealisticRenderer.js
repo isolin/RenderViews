@@ -5,9 +5,9 @@
 
     var self = BasicThreeRenderer(domQuery);
         
-  //  self.renderer = null;
-  //  self.scene = null;
-  //  self.camera = null;
+    self.renderer = null;
+    self.scene = null;
+    self.camera = null;
 
     var DirLight, SpotLight, stats;
     var cube;
