@@ -53,7 +53,7 @@
           spotLight.shadowMapWidth = 1024;
           spotLight.shadowMapHeight = 1024;
           spotLight.name = 'Spot Light';
-          scene.add( spotLight );
+          this.scene.add( spotLight );
 
           dirLight = new THREE.DirectionalLight( 0xffffff, 1 );
           dirLight.position.set( 0, 10, 0 );
@@ -69,7 +69,7 @@
           dirLight.shadowMapWidth = 1024;
           dirLight.shadowMapHeight = 1024;
           dirLight.name = 'Dir. Light';
-          scene.add( dirLight );
+          this.scene.add( dirLight );
 
 
 
@@ -86,7 +86,7 @@
           cube.position.set( 8, 3, 8 );
           cube.castShadow = true;
           cube.receiveShadow = true;
-          scene.add( cube );
+          this.scene.add( cube );
 
           var geometry = new THREE.BoxGeometry( 10, 0.15, 10 );
 
@@ -101,7 +101,7 @@
           ground.scale.multiplyScalar( 3 );
           ground.castShadow = false;
           ground.receiveShadow = true;
-          scene.add( ground );
+          this.scene.add( ground );
 
     }
           
