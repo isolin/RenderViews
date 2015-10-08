@@ -121,5 +121,5 @@
           renderer.render( scene, camera );
 
     }
-    return self;
+    return self
 }
